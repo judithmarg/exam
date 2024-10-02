@@ -1,9 +1,9 @@
 package com.ucb.network
 
-class FilmDataSource (
-    val retrofitService : RetrofitBuilder
+class FilmDataSource(
+    val retrofitService: RetrofitBuilder
 ) {
-    suspend fun getInfo(themoviedb: String) : ResponseDto {
-        return retrofitService.apiService.getInfo(themoviedb)
+    suspend fun getInfo(): FilmResponseDto {
+        return retrofitService.apiService.getInfo()
     }
 }

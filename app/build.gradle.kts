@@ -68,4 +68,6 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
     implementation(project(":network"))
     implementation(libs.coil)
+    implementation(libs.myretrofit)
+
 }
